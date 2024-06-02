@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/icoes/css/all.css">
+    <script defer src="../js/adm.js"></script>
+    <link rel="shortcut icon" type="imagex/png" href="imagens/icon.ico">
+    <title>ADM</title>
+</head>
+<body>
+
+    <div class="cadastro-cima">
+        <img class="foto-cadastro" src="../imagens/icon(png).jpg" alt="">
+        <a class="botao-header-cadastro" href="../index.html">Loja</a>
+    </div>
+
+    <div class="adm-baixo">
+        <div class="adm">
+            <form id="addProduto" onsubmit="AddProduto(event)">
+                <h3>Adicione um produto</h3>
+                Nome: <input class="input-adm" type="text" name="nome" id="nome"><br>
+                Preço: <input class="input-adm" type="text" name="preco" id="preco"><br>
+                Imagens: <input class="input-adm" type="file" name="imagens" id="imagens"><br>
+                <button class="botao" type="submit"> Salvar produto</button>
+            </form>
+        </div>
+        <div class="adm">
+            <form id="deleteProduto" onsubmit="DeleteProduto(event)">
+                <h3>Delete um produto</h3>
+                Nome: <input class="input-adm" type="text" name="nome" id="deleteNome"><br>
+                <button class="botao" type="submit"> Delete product</button>
+            </form>
+        </div>
+        
+    </div>
+</body>
+</html>
+
